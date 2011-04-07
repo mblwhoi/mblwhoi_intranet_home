@@ -1,0 +1,34 @@
+name = "Litecal"
+description = "A lite clean calendar UI."
+core = "6.x"
+
+; Information added by fserver
+core = "6.x"
+datestamp = "1263332074"
+project = "litecal"
+project status url = "http://featureserver.phase2technology.com/fserver"
+version = "6.x-1.0-alpha1"
+; Information added by fserver
+core = "6.x"
+datestamp = "1266436984"
+project = "litecal"
+project status url = "http://featureserver.phase2technology.com/fserver"
+version = "6.x-1.0-alpha2"
+; Information added by fserver
+core = "6.x"
+datestamp = "1268155556"
+project = "litecal"
+project status url = "http://featureserver.phase2technology.com/fserver"
+version = "6.x-1.0-alpha3"
+; Information added by fserver
+core = "6.x"
+datestamp = "1281646437"
+project = "litecal"
+project status url = "http://featureserver.phase2technology.com/fserver"
+version = "6.x-1.0-alpha4"
+; Information added by fserver
+core = "6.x"
+datestamp = "1290543315"
+project = "litecal"
+project status url = "http://featureserver.phase2technology.com/fserver"
+version = "6.x-1.0-alpha5"

@@ -1,0 +1,24 @@
+; $Id$
+name = Atrium translation
+description = Provides automatic downloads and updates for Atrium translations
+dependencies[] = l10n_update
+core = 6.x
+package = Multilanguage
+; Information added by fserver
+core = "6.x"
+datestamp = "1263337299"
+project = "atrium_features"
+project status url = "http://featureserver.phase2technology.com/fserver"
+version = "6.x-1.0-alpha1"
+; Information added by fserver
+core = "6.x"
+datestamp = ""
+project = "atrium_features"
+project status url = "http://featureserver.phase2technology.com/fserver"
+version = "6.x-1.0-alpha10"
+; Information added by fserver
+core = "6.x"
+datestamp = "1294331332"
+project = "atrium_features"
+project status url = "http://featureserver.phase2technology.com/fserver"
+version = "6.x-1.0-alpha11"

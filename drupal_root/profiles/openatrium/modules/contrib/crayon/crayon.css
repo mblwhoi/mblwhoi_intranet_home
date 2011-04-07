@@ -1,0 +1,80 @@
+/* $Id: crayon.css,v 1.1 2010/08/10 16:15:27 yhahn Exp $ */
+
+.crayon-swatch {
+  width:30px;
+  height:15px;
+  line-height:15px;
+  display:block;
+  float:left;
+  margin-right:5px;
+  }
+
+  .crayon-swatch .crayon-swatch-label {
+    height:15px;
+    text-align:center;
+    color:#fff;
+    font-size:9px;
+    display:block;
+    overflow:hidden;
+    }
+
+.crayon-anchor { position:relative; }
+.crayon-anchor .crayon-popup { display:none; }
+
+.crayon-anchor:hover .crayon-popup {
+  display:block;
+
+  position:absolute;
+  left:20px;
+  bottom:100%;
+  z-index:1000;
+
+  width:160px;
+  margin:0px 0px -5px -40px;
+  padding:0px 0px 10px;
+  border-top:1px solid #e0e0e0;
+  background:url(crayon-popup.png) 0px 100% no-repeat;
+  font-size:11px;
+  color:#333;
+  }
+
+  .crayon-anchor:hover .crayon-popup .crayon-popup-label {
+    word-wrap:break-word;
+    display:block;
+    padding:5px;
+    line-height:15px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    }
+
+  .crayon-anchor:hover .crayon-popup .with-swatch {
+    padding-left:25px;
+    position:relative;
+    }
+
+  .crayon-anchor:hover .crayon-popup .crayon-swatch {
+    position:absolute;
+    left:5px;
+    top:5px;
+    height:15px;
+    width:15px;
+    }
+
+  .crayon-anchor:hover .crayon-popup * { display:inline; }
+
+.crayon-0  {background-color: #e00;}
+.crayon-1  {background-color: #fa0;}
+.crayon-2  {background-color: #6e0;}
+.crayon-3  {background-color: #0c9;}
+.crayon-4  {background-color: #06c;}
+.crayon-5  {background-color: #66c;}
+.crayon-6  {background-color: #c08;}
+.crayon-7  {background-color: #c66;}
+.crayon-8  {background-color: #654;}
+.crayon-9  {background-color: #088;}
+.crayon-10 {background-color: #246;}
+.crayon-11 {background-color: #668;}
+.crayon-12 {background-color: #5a5;}
+.crayon-13 {background-color: #933;}
+.crayon-14 {background-color: #aaa;}
+.crayon-15 {background-color: #555;}
