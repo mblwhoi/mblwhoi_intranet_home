@@ -1,0 +1,17 @@
+<?php 
+
+/**
+ * @file
+ * Extend Linkit with permissions.
+ */
+
+/**
+ * Implementation of hook_perm().
+ */
+function linkit_permissions_perm() {
+  $perms = array('create all links');
+  foreach (module_invoke_all('linkit_info_plugins') as $plugin) {
+    $perms[] = 'create '. check_plain($plugin['type']) .' links';
+  }
+  return $perms;
+}

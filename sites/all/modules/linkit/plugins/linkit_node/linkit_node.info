@@ -1,0 +1,11 @@
+name = Linkit Node
+description = Extend Linkit with support for node links.
+core = 6.x
+package = Linkit
+dependencies[] = "linkit"
+; Information added by drupal.org packaging script on 2011-04-01
+version = "6.x-1.x-dev"
+core = "6.x"
+project = "linkit"
+datestamp = "1301616758"
+
