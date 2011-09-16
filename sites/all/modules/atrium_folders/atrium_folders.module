@@ -102,7 +102,6 @@ function atrium_folders_menu() {
  * @see: atrium_folders_menu()
  */
 function atrium_folders_tree($node) {
-
   module_load_include('inc', 'book', 'book.admin');
   $book = node_load($node->book['bid']);
   return drupal_get_form('book_admin_edit', $book);
@@ -128,13 +127,29 @@ function atrium_folders_tree_access($node) {
 function atrium_folders_form_alter(&$form, &$form_state, $form_id) {
 
   if ($form_id == 'folder_node_form') {
-    
+
     // Change book strings
     $form['book']['#title'] = t('Folder tree');
     $form['book']['plid']['#prefix'] = t('<div id="edit-book-plid-wrapper"><em>No folder selected.</em>');
     $form['book']['weight']['#description'] = t('Folders at a given level are ordered first by weight and then by name.');
     $form['book']['bid']['#title'] = t('Folders');
-    $form['book']['bid']['#options']['new'] = '<'. t('Create a new folder') .'>';
+    $form['book']['bid']['#options']['new'] = '<'. t('Create a new top-level folder') .'>';
+
+    // Filter options to only show folders.
+    $folders = array();
+    foreach ($form['book']['bid']['#options'] as $bid => $label){
+      if ($bid == 'new'){
+        $folders[$bid] = $label;  
+      } 
+      else{   	    
+        $n = node_load($bid);
+        if ($n->type == 'folder'){
+          $folders[$bid] = $label;
+        }
+     }
+    }
+    $form['book']['bid']['#options'] = $folders;
+
     $form['book']['bid']['#description'] = t('Your folder will be a part of the selected folder tree.');
     $form['book']['pick-book']['#value'] = t('Change folder (update list of parents)');
     $form['body_field']['body']['#rows'] = 2; // Reduce body height
