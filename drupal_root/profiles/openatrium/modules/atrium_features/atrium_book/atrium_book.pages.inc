@@ -14,7 +14,6 @@ function atrium_book_overview() {
   }
   $view= views_get_view('book_listing');
   return $view->preview('page_1');
-
 }
 
 /**
