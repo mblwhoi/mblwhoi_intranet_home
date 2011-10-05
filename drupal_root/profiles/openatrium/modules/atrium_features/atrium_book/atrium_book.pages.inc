@@ -12,7 +12,9 @@ function atrium_book_overview() {
     menu_set_active_item("node/{$node->nid}");
     return node_view($node, FALSE, TRUE, TRUE);
   }
-  return views_embed_view('book_listing', 'page_1');
+  $view= views_get_view('book_listing');
+  return $view->preview('page_1');
+
 }
 
 /**
