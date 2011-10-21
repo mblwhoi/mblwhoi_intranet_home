@@ -56,7 +56,8 @@ DirectoryIndex index.php
   php_value mbstring.http_input             pass
   php_value mbstring.http_output            pass
   php_value mbstring.encoding_translation   0
-  php_value upload_max_filesize 20M
+  php_value post_max_size 60M
+  php_value upload_max_filesize 60M
   php_value max_execution_time 300
   php_value max_input_time 300
 </IfModule>
